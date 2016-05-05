@@ -1,0 +1,17 @@
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+    text-align: center;
+    padding: 10%;
+    height: 100vh;
+}
+
+form {
+    margin: 20px;
+}
+
+label {
+    font-size: 20px;
+}
