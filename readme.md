@@ -7,6 +7,6 @@
 * Change directories into this project's folder. IE: `cd ~/Downloads/form-validation`
 * Run `npm install && bower install` in terminal.
   * Add `sudo` before the previous command if it fails.
-* Run `grunt serve` for local dev.
-* Run `grunt` in terminal for build. 
+* Run `gulp serve` for local dev.
+* Run `gulp` in terminal for build. 
 * Access `index.html` in the dist folder for the build preview.
