@@ -22,6 +22,41 @@
     <!-- endbuild -->
   </head>
   <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Form -->
+    <form name="form">
+
+      <fieldset class="form-group">
+
+        <label for="details">Enter Your Details</label>
+        <textarea 
+          required 
+          class="form-control" 
+          rows="4"  
+          name="details" 
+          tabindex=1>
+        </textarea>
+
+      </fieldset>
+
+      <input 
+        type="submit" 
+        class="btn btn-primary" 
+        value="Submit"></input>
+
+    </form>
+    
+    <!-- Alerts-->
+    <div class="alert alert-warning" ng-show="warning">
+      <strong>Warning!</strong> You might be submitting sensitive information. Hit submit again if you're okay with sending this. 
+    </div>
+
+    <div class="alert alert-success" ng-show="success">
+      <strong>Success!</strong> Good job, you've sent your stuff.
+    </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
