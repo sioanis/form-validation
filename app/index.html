@@ -21,13 +21,13 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body ng-app="form" ng-controller="FormController as form">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Form -->
-    <form name="form">
+    <form name="form" ng-submit="submit()">
 
       <fieldset class="form-group">
 
@@ -35,7 +35,8 @@
         <textarea 
           required 
           class="form-control" 
-          rows="4"  
+          rows="4" 
+          ng-model="details" 
           name="details" 
           tabindex=1>
         </textarea>
@@ -45,7 +46,8 @@
       <input 
         type="submit" 
         class="btn btn-primary" 
-        value="Submit"></input>
+        value="Submit"
+        ng-disabled="complete"></input>
 
     </form>
     
